@@ -10,7 +10,8 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
     
-    var tip: Float = 0.20
+    var tip: Double = 0.20
+    var split: Double = 2
     
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroPctButton: UIButton!
@@ -27,14 +28,16 @@ class CalculatorViewController: UIViewController {
         
         let tipString = sender.currentTitle?.dropLast() ?? "20"
         
-        tip = Float(tipString)! / 100
+        tip = Double(tipString)! / 100
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        split = sender.value
+        splitNumberLabel.text = String(format: "%.0f", split)
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        print(tip)
+        print(split)
     }
 
 }
