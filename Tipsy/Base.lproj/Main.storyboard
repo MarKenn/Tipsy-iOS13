@@ -39,7 +39,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjP-Nc-CvA">
-                                <rect key="frame" x="0.0" y="169" width="414" height="727"/>
+                                <rect key="frame" x="0.0" y="209" width="414" height="687"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="3zw-fC-gCB">
                                         <rect key="frame" x="20" y="60" width="374" height="270"/>
@@ -168,7 +168,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3zw-fC-gCB" secondAttribute="trailing" id="pt8-et-dHa"/>
                             <constraint firstItem="EOz-tc-znV" firstAttribute="top" secondItem="Hhq-2F-eDr" secondAttribute="top" id="qQm-IG-6fb"/>
                             <constraint firstItem="EOz-tc-znV" firstAttribute="trailing" secondItem="2zA-Ii-Njc" secondAttribute="trailingMargin" id="tya-kI-i0r"/>
-                            <constraint firstItem="EOz-tc-znV" firstAttribute="bottom" secondItem="PjP-Nc-CvA" secondAttribute="top" id="vTK-vW-UeT"/>
+                            <constraint firstItem="PjP-Nc-CvA" firstAttribute="top" secondItem="EOz-tc-znV" secondAttribute="bottom" constant="40" id="vTK-vW-UeT"/>
                         </constraints>
                     </view>
                     <connections>
