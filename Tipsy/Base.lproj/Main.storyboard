@@ -68,7 +68,7 @@
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Cw-3s-N2O"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwu-A9-VfH">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwu-A9-VfH">
                                                         <rect key="frame" x="113" y="0.0" width="67" height="54"/>
                                                         <accessibility key="accessibilityConfiguration" label="tenPctButton"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -80,7 +80,7 @@
                                                             <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AgZ-YQ-BRp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKa-YD-tVk">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKa-YD-tVk">
                                                         <rect key="frame" x="242" y="0.0" width="71" height="54"/>
                                                         <accessibility key="accessibilityConfiguration" label="twentyPctButton"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -177,6 +177,9 @@
                         <outlet property="tenPctButton" destination="Rwu-A9-VfH" id="UeY-Jh-lQS"/>
                         <outlet property="twentyPctButton" destination="CKa-YD-tVk" id="WrQ-qA-mAe"/>
                         <outlet property="zeroPctButton" destination="NIj-D2-Uq5" id="fFl-7V-7Mf"/>
+                        <outletCollection property="tipButtons" destination="NIj-D2-Uq5" collectionClass="NSMutableArray" id="QNx-e1-nvh"/>
+                        <outletCollection property="tipButtons" destination="Rwu-A9-VfH" collectionClass="NSMutableArray" id="MDc-jd-9Y4"/>
+                        <outletCollection property="tipButtons" destination="CKa-YD-tVk" collectionClass="NSMutableArray" id="TRj-YN-jFZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
